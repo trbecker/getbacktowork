@@ -2,6 +2,7 @@
 # getbacktowork.sh will warn you after some task is completed, so you can slack off 
 # while the computer does the heavy work.
 # Requirements: zenity (linux)
-# Usage: getbacktowork.sh <command>
+# Usage: getbacktowork.sh "<command>"
+# The quotation marks are required.
 
 eval $@ && zenity --info --text "Work complete" || zenity --error --text "Work failed"
