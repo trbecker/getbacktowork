@@ -4,4 +4,4 @@
 # Requirements: zenity (linux)
 # Usage: getbacktowork.sh <command>
 
-($@) && zenity --info --text "Work complete" || zenity --error --text "Work failed"
+eval $@ && zenity --info --text "Work complete" || zenity --error --text "Work failed"
